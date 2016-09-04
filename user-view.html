@@ -1,0 +1,19 @@
+<link rel="import" href="../polymer/polymer.html">
+<link rel="import" href="../paper-input/paper-input.html">
+
+<dom-module id="user-view">
+  <template>
+    <div>{{name}}</div>
+    <div><paper-input id="name" label="My Name" bind-value={{name}}></paper-input></div>
+  </template>
+
+  <script>
+    Polymer({
+      is: 'user-view',
+      properties: {
+        name: String
+      }
+    });
+  </script>
+</dom-module>
+
