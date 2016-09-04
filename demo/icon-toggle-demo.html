@@ -1,6 +1,7 @@
 <link rel="import" href="../../polymer/polymer.html">
 <link rel="import" href="../../iron-icons/iron-icons.html">
 <link rel="import" href="../icon-toggle.html">
+<link rel="import" href="../user-view.html">
 
 
 <dom-module id="icon-toggle-demo">
@@ -22,6 +23,9 @@
 
     <!-- use a computed binding to generate the message -->
     <div><span>[[message(isFav)]]</span></div>
+
+    <!-- usage -->
+    <user-view name="Samuel"></user-view>
 
     <!-- curly brackets ({{}}} allow two-way binding --> 
     <icon-toggle toggle-icon="favorite" pressed="{{isFav}}"></icon-toggle>
